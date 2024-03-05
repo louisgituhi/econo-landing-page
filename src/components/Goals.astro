@@ -1,0 +1,32 @@
+---
+import { Image } from "astro:assets"
+import launch from "../images/launch.svg"
+import milestone from "../images/milestone.svg"
+import relax from "../images/relax.svg"
+---
+<section class=" min-h-svh w-9/12 mx-auto text-white mt-20">
+        <h2 class=" text-center text-lg">Team-Up with us to:</h2>
+        <div class="flex flex-col space-y-2 lg:space-y-0 lg:flex-row items-stretch justify-center mt-10 lg:space-x-6  md:pt-10">
+            <div class="text-white text-3xl flex flex-col items-center justify-start space-y-6  rounded-3xl p-6 sm:min-h-[200px] w-full lg:w-1/3">
+                <Image loading="lazy" quality={"mid"} src={milestone} height={200} alt="" />
+                    <div class="flex flex-col space-y-2">
+                        <span class=" text-left text-xl">Hit your milestones</span>
+                        <span class=" text-gray-400 text-sm text-left">Meet all your project deadlines and milestones without worry on material shortages.</span>
+                    </div>
+            </div>
+            <div class="text-white text-3xl flex flex-col items-center justify-start space-y-6  rounded-3xl p-6 sm:min-h-[200px] w-full lg:w-1/3">
+                <Image loading="lazy" quality={"mid"} src={launch} height={200} alt="" />
+                    <div class="flex flex-col space-y-2">
+                        <span class=" text-left text-xl">Launch you Site</span>
+                        <span class=" text-gray-400 text-sm text-left">Transition from an idea to a robust building with a strong foundation from quality materials.</span>
+                    </div>
+            </div>
+            <div class="text-white text-3xl flex flex-col items-center justify-start space-y-6  rounded-3xl p-6 sm:min-h-[200px] w-full lg:w-1/3">
+                <Image loading="lazy" quality={"mid"} src={relax} height={600} alt="" />
+                    <div class="flex flex-col space-y-2">
+                        <span class=" text-left text-xl">Relax</span>
+                        <span class=" text-gray-400 text-sm text-left">Relax and focus on other construction activities. We have all your materials handled</span>
+                    </div>
+            </div>
+        </div>
+</section>
