@@ -1,5 +1,6 @@
 ---
 import { Image } from "astro:assets"
+import profile from "../images/profile.jpg"
 import const1 from "../images/const 1.webp"
 import const2 from "../images/const 2.webp"
 import const3 from "../images/const 3.webp"
@@ -29,12 +30,8 @@ import const8 from "../images/const 8.webp"
         <div class="bg-slate-800 text-white rounded-lg w-full mx-5 md:w-[40rem]  space-y-6 p-10">
        <!-- header -->
        <div class="flex space-x-4 items-center ">
-         <div class="w-12 h-12"
-         >
-           <img
-               alt="avatar"
-               src="https://images.unsplash.com/photo-1518791841217-8f162f1e1131?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60"
-               class="rounded-full w-full h-full object-cover ">
+         <div class="w-12 h-12">
+          <Image class="rounded-full w-full h-full object-cover " src={profile} alt="profile picture" />
            <div>
            </div>
          </div>
