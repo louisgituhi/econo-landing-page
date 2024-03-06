@@ -1,5 +1,10 @@
 ---
-
+import { Image } from "astro:assets"
+import const1 from "../images/const 1.webp"
+import const2 from "../images/const 2.webp"
+import const3 from "../images/const 3.webp"
+import const6 from "../images/const 6.webp"
+import const8 from "../images/const 8.webp"
 ---
 <!doctype html>
 <html lang="en">
@@ -58,26 +63,26 @@
 
 
        <div class="grid grid-cols-6 col-span-2   gap-2  ">
+
          <div class=" overflow-hidden rounded-xl col-span-3 max-h-[14rem]">
-           <img class="h-full w-full object-cover "
-                src="https://images.unsplash.com/photo-1517487881594-2787fef5ebf7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=735&q=80"
-                alt="">
+            <Image class="h-full w-full object-cover" src={const1} alt="iamge1" />
          </div>
          <div class=" overflow-hidden rounded-xl col-span-3 max-h-[14rem]">
-           <img class="h-full w-full object-cover  "
-                src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1399&q=80"
-                alt="">
+            <Image class="h-full w-full object-cover" src={const2} alt="iamge1" />
          </div>
+
          <div class=" overflow-hidden rounded-xl col-span-2 max-h-[10rem]">
-           <img class="h-full w-full object-cover "
-                src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80"
-                alt="">
+            <Image class="h-full w-full object-cover" src={const3} alt="iamge1" />
          </div>
+
          <div class=" overflow-hidden rounded-xl col-span-2 max-h-[10rem]">
-           <img class="h-full w-full object-cover "
-                src="https://images.unsplash.com/photo-1503602642458-232111445657?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"
-                alt="">
+            <Image class="h-full w-full object-cover" src={const6} alt="iamge1" />
          </div>
+
+         <div class=" overflow-hidden rounded-xl col-span-2 max-h-[10rem]">
+            <Image class="h-full w-full object-cover" src={const8} alt="iamge1" />
+         </div>
+
        </div>
 
 
