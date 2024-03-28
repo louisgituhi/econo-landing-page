@@ -1,6 +1,9 @@
 ---
 import { Image } from "astro:assets"
 import disney from "../images/disney.svg"
+import { date } from "astro/zod"
+
+const now = new Date().getFullYear()
 ---
 <footer class="bg-primary border-t border-white/10 mt-20 lg:mt-[6rem]" id="contact">
     <div class="mx-auto max-w-8xl px-6 py-12 md:flex md:items-center md:justify-between lg:px-8">
@@ -34,7 +37,7 @@ import disney from "../images/disney.svg"
             <div class="mt-8 md:order-1 md:mt-0">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="36" height="36" fill="rgba(70,146,221,1)"><path d="M21 19H23V21H1V19H3V4C3 3.44772 3.44772 3 4 3H14C14.5523 3 15 3.44772 15 4V19H17V9H20C20.5523 9 21 9.44772 21 10V19ZM7 11V13H11V11H7ZM7 7V9H11V7H7Z"></path></svg>
                 <p class="text-left text-sm leading-5 text-white/50 my-2">A Building &amp; Construction Company based in KENYA</p>
-                <p class="text-left text-xs leading-5 text-white/50">© 2023 <a href="https://luidigitals.com/">luidigitals</a></p>
+                <p class="text-left text-xs leading-5 text-white/50">© {now} <a href="https://luidigitals.com/">luidigitals</a></p>
             </div>
         </div>
 </footer>
